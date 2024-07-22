@@ -1,19 +1,11 @@
-/*
- * You can use the following import statements
- * 
- * import org.springframework.web.server.ResponseStatusException;
- * import org.springframework.http.HttpStatus;
- * 
- */
-
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.http.HttpStatus;
 package com.example.movie;
 
 import com.example.movie.Movie;
 import com.example.movie.MovieRepository;
 
 import java.util.*;
-
-// Do not modify the below code
 
 public class MovieService implements MovieRepository {
 

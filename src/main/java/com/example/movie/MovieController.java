@@ -3,11 +3,7 @@ package com.example.movie;
 import org.springframework.*;
 import java.util.*;
 import com.example.movie.MovieService;
-
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MovieController {
@@ -25,7 +21,7 @@ public class MovieController {
 
     @GetMapping("movies/{movieId}")
     public Movie getMovieById(@PathVariable("movieId") int movieId) {
-        return apiService.getMovieById();
+        return apiService.getMovieById(MovieId);
     }
 
     @PutMapping("movies/{movieId}")
